@@ -1,0 +1,173 @@
+Delphi components:
+--------------------
+TkpMemo       v 1.55
+TkpUserScreen v 1.55
+TkpSyntaxMemo v 1.55
+
+(c) Konstantin Polyakov, 2000-2005.
+
+FIDO:   2:5030/790.56
+e-mail: kpolyakov@mail.ru
+Web:    http://kpolyakov.by.ru
+	http://kpolyakov.narod.ru
+
+Version History
+--------------- 
+  1.55
+        - memory leak is removed in TkpMemo
+        - AutoIndent is set to False in TkpUserScreen
+
+  1.54
+        - some problems with Undo/Redo have been fixed
+        - error with inserting template is fixed
+
+  1.53  
+        - some improvements with Ctrl-Left and Ctrl-Right
+        - supports Ctrl-Backspace (delete word)
+  1.52  
+        - bugs with ReadOnly mode are fixed
+  1.5  
+        - support for mouse wheel action is added
+        - FindText function is added for cooperation with
+          FindDialog and ReplaceDialog
+  1.45  
+        - a bug fixed with first empty line after Lines.Assign  
+  1.44
+  	- a bug fixed with stack overflow in Delphi 6 and 7
+  1.43
+  	- compatibility with Delphi 7
+  	- some minor bugs fixed
+  1.42
+  	- word selection by double click is realized
+  	- some minor bugs fixed
+  1.41
+  	- read-only property SelLength is added
+  	- read-only methods CanUndo, CanRedo are added
+  	- standard handling of Ctrl-C, Ctrl-V, Ctrl-X
+  1.4
+  	- Delphi 6.0 compatible
+  	- DelErase property is added
+  	- Selection property is made public
+  	- ClearSelection method is made public
+  	- '[' and ']' are added to delimiters
+  	- bug causing sometimes Access Violation is fixed
+  	- bug with highlighting durign horizontal scrolling is fixed
+  	- bug with IndexOutOfBounds when setting CurX and CurY is fixed
+  	- bug with horizontal scrollbar during resizing is fixed
+  1.35	
+  	- OnChange now appears when Enter is pressed
+  1.34
+        - bug in reading long strings from disk file is fixed  
+  1.33
+        - bug with incorrect size of caret after
+          change of the font is fixed
+  1.32 
+        - bug with line addition in design-time fixed
+  1.31  
+        - some bug fixes
+  1.3
+        - Lines.Add and Lines.Insert with Undo-Redo support
+  1.2
+        - some bugs fixed
+  1.1 
+        - fixed bug with cursor
+        - fixed bug with char selecting (SelectChar)
+        - fixed memory leaks
+        - fixed bug with run-time resize
+        - fixed bug with deleting of selected text
+        - property ScrollMode added, which makes it
+             possible to lock unwanted scrolling when the
+             coresponding scroll bar is absent
+        - added line deletion on Ctrl-Y
+        - event OnAttrChange added
+        - methods Undo and Redo added 
+        - event OnUndoChange added
+        - added property CaseSensitive of TkpSyntaxMemo
+  1.0
+        - first release
+
+История версий        
+--------------
+  1.55
+        - ликвидирована утечка памяти в TkpMemo
+        - свойство AutoIndent сброшено для TkpUserScreen
+
+  1.54
+        - ликвидированы некоторые проблемы с Undo/Redo
+        - исправлена ошибка, приводящая к неверной вставке шаблона
+
+  1.53  
+        - "разумное" выполнение операций Ctrl-Left и Ctrl-Right
+        - поддержка Ctrl-Backspace (удалить слово)
+  1.52  
+        - исправлены ошибки в режиме ReadOnly 
+  1.5  
+        - добавлена поддержка мышей с колесиком
+        - добавлена функция FindText для взаимодействия с
+          FindDialog и ReplaceDialog
+  1.45
+  	- исправлена ошибка, приводившая к появлению лишней пустой строки
+          при выполнении Lines.Assign
+  1.44
+  	- исправлена ошибка, приводившая к переполнению стека
+          при добавлении строки в Delphi 6-7
+  1.43
+  	- совместимость с Дельфи 7
+  	- исправлены некоторые мелкие ошибки
+  1.42
+  	- реализовано выделение слова по двойному щелчку
+  	- исправлены некоторые мелкие ошибки
+  1.41
+  	- добавлено read-only свойство SelLength
+  	- добавлены read-only свойства CanUndo, CanRedo
+  	- стандартная обработка сочетаний Ctrl-C, Ctrl-V, Ctrl-X
+  1.4
+        - совместимость с Delphi 6
+    	- добавлено свойство DelErase
+  	- свойство Selection переведено в раздел public
+  	- метод ClearSelection переведен в раздел public
+  	- в список символов-разделителей добавлены '[' и ']'
+  	- исправлена ошибка, вызывающая иногда Access Violation
+  	  при загрузке строк из потока
+  	- исправлена ошибка подсветки при горизонтальной прокрутке
+  	- исправлены ошибки IndexOutOfBounds при установке CurX и CurY
+  	- исправлена ошибка с некорректной отрисовкой горизонтальной 
+  	  линейки прокрутки при изменении размеров
+  1.35	
+  	- событие OnChange вызывается при нажатии Enter
+  1.34  
+        - исправлена ошибка при чтении из файла длинных строк,
+          которые не помещаются в ширину поля редактора
+  1.33
+        - исправлена ошибка, связанная с неверным размером
+          каретки при изменении размера шрифта
+  1.32
+        - исправлена ошибка, не позволявшая добавлять строки
+          в design-time
+  1.31
+        - исправлены ошибки
+  1.3
+        - добавлена возможность делать Lines.Add и Lines.Insert
+          с поддержкой Undo - Redo
+  1.2
+        - исправлены ошибки
+  1.1
+        - исправлена ошибка с курсором
+        - исправлена процедура выделения символа SelectChar                
+        - ликвидированы утечки памяти
+        - исправлена ошибка, возникавшая при изменении размеров
+          в run-time
+        - исправлена ошибка с удалением выделенного текста
+        - добавлено свойство ScrollMode, которое позволяет
+          отменить нежелательный скроллинг в том случае, если
+          соответствующей линейки прокрутки нет
+        - добавлено удаление текущей строки по Ctrl-Y
+        - добавлено событие OnAttrChanged, которое генерируется
+          при изменении атрибутов символов
+        - добавлены методы Undo и Redo
+        - добавлено событие OnUndoChange, которое генерируется
+          при изменении в списке Undo
+        - добавлено свойство CaseSensitive для TkpSyntaxMemo
+  1.0
+        - первая версия
+          

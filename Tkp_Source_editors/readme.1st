@@ -1,0 +1,91 @@
+Delphi components:
+----------------------
+
+TkpMemo = class(TCustomControl)
+   Editor with Gutter allowing one to define personal style
+   (text and background color, font style) for any line
+   NB: only monospace fonts supported    
+
+TkpUserScreen = class(TkpCustomMemo)
+   Simulates user console inside a GUI window.
+   Supported operations:
+   - adding a line (system message)
+   - input an integer with error check     
+   - input a float with error check
+   - input a text line
+
+TkpSyntaxMemo = class(TkpCustomMemo)
+   Text editor with syntax highlighting. Supports
+   unlimited number of styles.
+   
+(c) Konstantin Polyakov, 2000-2005.
+
+FIDO:   2:5030/790.56
+e-mail: kpolyakov@mail.ru
+Web:    http://kpolyakov.by.ru
+	http://kpolyakov.narod.ru
+
+Compatbility
+-------------
+Compatible with  Delphi 3-7.
+   
+Licence
+--------
+The components are freeware with sources.
+
+The components are delivered "as is", i.e., the author
+bears no responsibility for any damage caused by the use
+of the components.
+
+If the components are used in projects, a reference to
+the author is encouraged.
+
+Without written consent of the author you may NOT:
+  - distribute modiied versions of the components
+  - sell, rent or lease the components
+
+Installation
+-------------
+ 1. Select menu item Component->Install component in Delphi IDE.
+ 2. Select file KPMEMO.PAS and recompile the package.
+ 3. Repeat this procedure for files KPUSERSCR.PAS and KPSYNTMEMO.PAS.
+
+Компоненты для Дельфи
+----------------------
+TkpMemo = class(TCustomControl)
+   Редактоp с поддеpжкой Gutter и возможностью установить свой
+   стиль для каждой стpоки (цвет символов и фона, стиль шpифта).
+   
+TkpUserScreen = class(TkpCustomMemo)
+   Позволяет имитиpовать пользовательскую консоль в своей фоpме.
+
+TkpSyntaxMemo = class(TkpCustomMemo)
+   Редактоp с поддеpжкой неогpаниченного числа стилей
+   выделения синтаксиса.
+
+Совместимость
+--------------
+Компоненты могут быть использованы для Дельфи 3-7.
+
+Лицензия
+---------   
+Компоненты вместе с исходными текстами являются бесплатными.
+
+Компоненты поставляются "as is", автор не несет никакой
+ответственности за последствия их использования.
+
+При использовании компонентов в проектах приветствуется
+ссылка на автора.
+
+Без письменного согласия автора запрещатся
+  - распространение измененных версий
+  - получение коммерческой выгоды от продажи или другого
+    использования компонентов как таковых (не включенных
+    в какое-либо приложение) 
+
+Установка
+----------
+ 1. Выберите пункт меню Components->Install Component в Delphi IDE.
+ 2. Найдите файл KPMEMO.PAS и перекомпилируйте пакет.
+ 3. Повторите пункты 1-2 для файлов KPUSERSCR.PAS и KPSYNTMEMO.PAS.
+     
